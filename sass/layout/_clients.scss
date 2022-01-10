@@ -1,4 +1,4 @@
-.customers {
+.clients {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--main-btn-color);
@@ -8,7 +8,7 @@
   }
 }
 
-.customers__title {
+.clients__title {
   text-align: center;
   margin-bottom: 30px;
   @include font(700, 28px, 1.17, 100%);
@@ -20,13 +20,13 @@
   }
 }
 
-.customers__list {
+.clients__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.customers__item {
+.clients__item {
   display: flex;
   margin-bottom: 30px;
   &:nth-child(n + 5) {
@@ -42,7 +42,7 @@
   }
 }
 
-.customers__link {
+.clients__link {
   @include flex;
   width: 210px;
   height: 92px;
@@ -71,7 +71,7 @@
   }
 }
 
-.customers__svg {
+.clients__svg {
   display: flex;
   width: 106px;
   height: 60px;
