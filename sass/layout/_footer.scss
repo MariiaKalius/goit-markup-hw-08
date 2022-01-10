@@ -1,0 +1,219 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-bg-color);
+}
+
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    }
+}
+
+.footer__container-address {
+  margin-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+    }
+}
+
+.footer__container-link {
+  margin-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+    }
+  }
+
+.footer__web-logo {
+  font-family: Raleway;
+  font-style: normal;
+  @include font(700, 26px, 1.2, 0.03em);
+  color: var(--accent-color);
+}
+
+.footer__Studio-logo {
+  color: var(--main-title-color);
+}
+
+.footer__address {
+  margin-top: 20px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__link {
+  font-style: normal;
+  @include font(400, 14px, 1.71, 0.03em);
+  color: #ffffff;
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__container-link__title {
+  @include font(700, 14px, 1.14, 0.03em);
+  vertical-align: Top;
+  color: var(--main-title-color);
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
+}
+
+.footer__mailto {
+  font-style: normal;
+  @include font(400, 14px, 1.71, 0.03em);
+  color: var(--second-text-color);
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__tel {
+  font-style: normal;
+  @include font(400, 14px, 1.71, 0.03em);
+  color: var(--second-text-color);
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-link {
+  @include flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  color: var(--main-title-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--main-title-color);
+  }
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-title-color);
+  }
+}
+
+.footer__social-item {
+  margin-top: 20px;
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer__social-icon {
+  fill: currentColor;
+}
+
+.footer__container-subscription {
+  // margin-left: 93px;
+    text-align: center;
+    // @media screen and (min-width: 1200px) {
+    //   display: flex;
+    //   flex-wrap: nowrap;
+    // }
+}
+
+.footer__subscription {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    }
+  }
+
+.footer__subscription-title {
+  display: block;
+  margin-bottom: 20px;
+
+  @include font(400, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
+}
+
+.footer__subscription-text {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  width: 450px;
+  padding-left: 16px;
+  color: var(--main-btn-color);
+  background-color: var(--footer-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+  width: 358px;
+  }
+  &::placeholder {
+    @include flex-min;
+    @include font(400, 16px, 1.25, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer__subscription-btn {
+  @include flex;
+  // margin-left: 12px;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  @include font(700, 16px, 1.87, 0.06em);
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    }
+
+  color: var(--main-btn-color);
+  border-radius: 4px;
+  transition: color 250ms linear, background-color 250ms linear;
+  &:hover {
+    color: var(--main-btn-color);
+    background-color: var(--second-accent-color);
+  }
+  &:focus {
+    color: var(--main-btn-color);
+    background-color: var(--second-accent-color);
+  }
+}
+
+.footer__subscription-icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
